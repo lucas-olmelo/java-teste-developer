@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 public class ClienteDetalhadoDTO {
     private String nome;
     private String cpf;
+    private String email;
     private String empresa;
     private BigDecimal saldo;
 }

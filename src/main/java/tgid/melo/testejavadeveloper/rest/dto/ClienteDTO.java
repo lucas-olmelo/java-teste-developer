@@ -18,6 +18,9 @@ public class ClienteDTO {
     @NotEmpty(message = "O campo cpf não pode ser vazio!")
     private String cpf;
 
+    @NotEmpty(message = "O campo 'email' deve ser preenchido!")
+    private String email;
+
     @NotNull(message = "O campo empresa não pode ser vazio!")
     private int empresa;
 }

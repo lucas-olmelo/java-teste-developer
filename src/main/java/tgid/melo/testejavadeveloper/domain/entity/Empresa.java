@@ -34,6 +34,10 @@ public class Empresa {
     private String cnpj;
 
     @Column
+    @NotEmpty(message = "O campo 'email' deve ser preenchido!")
+    private String email;
+
+    @Column
     @NotNull(message = "O campo 'taxa' precisa ser preenchido!")
     private float taxa;
 

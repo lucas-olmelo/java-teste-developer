@@ -25,9 +25,14 @@ public class Cliente {
     @NotEmpty(message = "O campo 'nome' deve ser preenchido!")
     private String nome;
 
+    @Column
     @CPF(message = "CPF inválido")
     @NotEmpty(message = "O campo 'CPF' deve ser preenchido!")
     private String cpf;
+
+    @Column
+    @NotEmpty(message = "O campo 'email' deve ser preenchido!")
+    private String email;
 
     @ManyToOne
     @JoinColumn(name = "empresa_id")
